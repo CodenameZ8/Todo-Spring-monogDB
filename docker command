@@ -1,0 +1,10 @@
+FROM openjdk:11-jdk-slim
+RUN addgroup -S spring && adduser -S spring -G spring
+ARG WAR_FILE=build/*.war
+COPY ${WAR_FILE} app.war
+ENTRYPOINT ["java","-jar","/app.war"]
+
+sudo docbuild --build-arg WAR_FILE=build/libs/\*.war -t springio/gs-spring-boot-docker .
+sudo docker run -p 8080:5000  springio/gs-spring-boot-docker 
+
+sudo docker exec -it containerID/name /bin/bash

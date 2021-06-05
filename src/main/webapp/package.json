@@ -1,0 +1,22 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "Todo App",
+  "main": "todo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodenameZ8/Todo-js.git"
+  },
+  "keywords": [
+    "todo"
+  ],
+  "author": "vikram",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodenameZ8/Todo-js/issues"
+  },
+  "homepage": "https://github.com/CodenameZ8/Todo-js#readme"
+}

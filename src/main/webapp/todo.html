@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<body>
+    <script src="./todo.js"></script>
+    <script src="./sampleHTTP.js"></script>
+    <style>
+        body {
+          background-color: rgb(155, 188, 196);
+        }
+        
+        h1 {
+          color: rgb(36, 23, 23);
+          font-size:80px;
+          text-align: center;
+        }
+
+        h2 {
+          color: rgb(236, 27, 27);
+          font-family: verdana;
+          font-size: 35px;
+          text-align: center;
+        }
+
+        h3 {
+          color: rgb(236, 229, 229);
+          font-family: verdana;
+          font-size: 35px;
+          text-align: center;
+        }
+
+        h4 {
+          color: rgb(1, 15, 15);
+          font-family: verdana;
+          font-size: 25px;
+          text-align: right;
+        }
+        h5 {
+          color: rgb(1, 15, 15);
+          font-family: verdana;
+          font-size: 20px;
+          text-align: right;
+        }
+        
+        p {
+          font-family: verdana;
+          font-size: 20px;
+          text-align: center;
+        }
+        div{
+          font-size: 40px;
+          text-align: center;
+
+        }
+        </style>
+<h1>To do app</h1>
+<h4 text-align="right">Pending task
+  <h5 id="pendingYesterday" text-align="right"></h5>
+  <h5 id="pendingToday" text-align="right"></h5>
+  <h5 id="pendingTomorrow" text-align="right"></h5>
+  <h5 id="pendingDealyed" text-align="right"></h5>
+</h4>
+<p>Enter the Todo list</p>
+<div>
+    <label for="task">Task</label><br>
+    <input type="text" id="task" name="task" placeholder="Enter the task" value="1" >
+    <input type="date" id="taskDate" name="taskDate"placeholder="Time" value="2021-02-15" >
+    <input type="time" id="taskTime" name="taskTime" value="15:00"><br>
+    <button onclick="addTask()">Add task</button><br><br>
+    <input type="text" id="taskDelete" name="taskDelete" placeholder="Enter the task ID to delete">
+    <button onclick="deleteTask()">Delete task</button><br>
+
+</div>
+
+ <h3>All tasks 
+  <ol id="taskList"></ol>
+ </h3>
+ <button onclick="sampleHTTP()">sample</button>
+ <div id="sample"></div>
+</body>
+</html>
